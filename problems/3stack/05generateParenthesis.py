@@ -5,6 +5,7 @@ class Solution:
         def backtrack(openN,closeN):
             if openN == closeN == num :
                 res.append("".join(stack))
+                print(res)
                 return
             if openN < num :
                 stack.append("(")
