@@ -40,5 +40,6 @@ class Solution:
                 if len(res) == k :
                     return res
 ans = Solution()
-print(ans.topKFrequent([1,2,1,3,2,2,4],2))
+print(ans.topKFrequent([1,2,1,3,3,4],2))
+
 

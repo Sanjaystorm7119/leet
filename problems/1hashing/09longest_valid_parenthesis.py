@@ -15,4 +15,4 @@ class Solution:
         return longest
 
 ans = Solution()
-print(ans.longestValidParentheses(")(())"))
+print(ans.longestValidParentheses(")("))
