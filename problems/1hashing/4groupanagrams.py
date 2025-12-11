@@ -6,7 +6,7 @@ class Solution:
         for word in words :
             char_bucket = [0]*26
             for char in word :
-                char_bucket[ord('a') - ord(char)] += 1
+                char_bucket[ord(char) - ord('a')] += 1
             res[tuple(char_bucket)].append(word)
         return list(res.values())
     
