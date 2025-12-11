@@ -18,9 +18,30 @@
 # print(ans.minDistance([1,2,3,4,5,1,6,7,1,9]))
 
 x = [1,2,3,4]
-y = [num*2 for num in x ]
+# y = [num*2 for num in x ]
 
-map1 = list(map(lambda n:n*2 , x))
-print(map1)
-filter1 = list(filter(lambda n:n%2==0 ,x))
-print(filter1)
+# map1 = list(map(lambda n:n*2 , x))
+# print(map1)
+# filter1 = list(filter(lambda n:n%2==0 ,x))
+# print(filter1)
+
+# lis1 = (num for num in range(10))
+# print(next(lis1))
+
+# for i in lis1 :
+#     print(next(lis1))
+# class Addition :
+#     @staticmethod
+#     def add(*args):
+#         return sum(args)
+
+# ans = Addition()
+# print(ans.add(1,2,3))
+
+class Addition :
+    
+    def add(self,*args):
+        return sum(args)
+
+ans = Addition()
+print(ans.add(1,2,3))
