@@ -76,11 +76,15 @@
 
 class Codec:
     def encode(self , words :list[str]) -> str :
+        # res = ""
         res = []
         for word in words:
-            res.append(str(len(word)) + "#"+word)
-        return "".join(res)
+        #     res += str(len(word))+"#"+word
+        # return "".join(res)
     
+            res.append(str(len(word)) + "#"+ word)
+        return "".join(res)
+            
     def decode(self , s:str) -> list[str]:
         res = []
         i = 0
@@ -89,7 +93,9 @@ class Codec:
             while s[j] != "#":
                 j += 1
             length = int(s[i:j])
-            res.append(s[j+1:j+1+length])
+            # print(i,j)
+            # print(length)
+            res.append(s[j+1 : j+1+length])
             i = j+1+length
         return res
 ans = Codec()

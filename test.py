@@ -38,10 +38,13 @@ x = [1,2,3,4]
 # ans = Addition()
 # print(ans.add(1,2,3))
 
-class Addition :
+# class Addition :
     
-    def add(self,*args):
-        return sum(args)
+#     def add(self,*args):
+#         return sum(args)
 
-ans = Addition()
-print(ans.add(1,2,3))
+# ans = Addition()
+# print(ans.add(1,2,3))
+
+s="sanjay"
+print(len(s[:]))
